@@ -8,3 +8,7 @@ useful tools/tricks/oneliners which can help my life (and yours, why not?)
 in the Cloud.
 
 Riccardo
+
+# Credits
+
+* Google: boulos@
