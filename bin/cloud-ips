@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# provides the Google IPs related to Cloud. this can be used if you want to
+# configure a firewall to open to all products within GCP (Cloud Storage, App Engine, ...)
+for block in {1..4}; do
+  nslookup -q=TXT _cloud-netblocks${block}.googleusercontent.com 8.8.8.8 | egrep -o "ip4:[0-9\./]+" ;
+done | sed -e 's/ip4://'
+
